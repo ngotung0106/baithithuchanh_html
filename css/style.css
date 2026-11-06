@@ -1,0 +1,201 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #fff;
+  color: #222;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== HEADER ===== */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 40px;
+  background: #f8f8f8;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #222;
+  text-decoration: none;
+}
+
+.logo span {
+  color: #e91e63;
+}
+
+nav a {
+  margin: 0 20px;
+  color: #666;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #3949f5;
+}
+
+.auth a {
+  padding: 10px 22px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+  margin-left: 8px;
+  display: inline-block;
+}
+
+.btn-in {
+  background: #3949f5;
+  color: #fff;
+  border: 1px solid #3949f5;
+}
+
+.btn-up {
+  background: #fff;
+  color: #283593;
+  border: 1px solid #283593;
+}
+
+/* ===== PLAYER ===== */
+.player {
+  width: 620px;
+  margin: 40px auto;
+  padding: 20px;
+  border: 2px solid #3949f5;
+  border-radius: 12px;
+}
+
+.player audio {
+  width: 100%;
+}
+
+.song-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.song-info .title {
+  color: #e91e63;
+}
+
+.song-info .title b {
+  color: #222;
+  font-weight: normal;
+  margin-left: 8px;
+}
+
+.lyrics {
+  width: 55%;
+  line-height: 1.4;
+}
+
+/* ===== ALBUM GRID ===== */
+.grid {
+  width: 640px;
+  margin: 0 auto 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.card {
+  border: 1px solid #f3c6d3;
+  border-radius: 10px;
+  padding: 8px;
+  font-size: 13px;
+}
+
+.card img {
+  width: 100%;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.card p {
+  margin: 8px 0 4px;
+}
+
+.stars {
+  color: #ffb400;
+  font-size: 18px;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  margin-top: auto;
+  background: #f8f8f8;
+  padding: 15px 40px;
+  color: #3949f5;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+footer span {
+  color: #e91e63;
+  font-size: 18px;
+  margin: 0 8px;
+}
+
+/* ===== LOGIN ===== */
+.login-box {
+  width: 400px;
+  margin: 60px auto;
+  min-height: 280px;
+}
+
+.login-box label {
+  display: block;
+  font-size: 18px;
+  margin: 10px 0 5px;
+}
+
+.login-box input[type=email],
+.login-box input[type=password] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #888;
+  border-radius: 6px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin: 18px 0;
+  font-size: 13px;
+}
+
+.row a,
+.register a {
+  color: #3a6fe0;
+  text-decoration: none;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  background: #4a76e8;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.register {
+  text-align: right;
+  margin-top: 15px;
+  font-size: 14px;
+}
